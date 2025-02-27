@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainFragment">
+
+    <Button
+        android:id="@+id/btnIntents"
+        android:layout_width="200dp"
+        android:layout_height="160dp"
+        android:layout_marginBottom="160dp"
+        android:backgroundTint="#BF9854"
+        android:fontFamily="serif-monospace"
+        android:text="Intents"
+        android:textColorLink="#923232"
+        android:textSize="24sp"
+        app:cornerRadius="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnProvider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnService"
+        android:layout_width="200dp"
+        android:layout_height="160dp"
+        android:layout_marginBottom="160dp"
+        android:backgroundTint="#BF9854"
+        android:fontFamily="serif-monospace"
+        android:text="Service"
+        android:textSize="24sp"
+        app:cornerRadius="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnReceiver"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnReceiver"
+        android:layout_width="200dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="160dp"
+        android:backgroundTint="#BF9854"
+        android:fontFamily="serif-monospace"
+        android:text="Receiver"
+        android:textSize="24sp"
+        app:cornerRadius="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnService"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnProvider"
+        android:layout_width="200dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="160dp"
+        android:backgroundTint="#BF9854"
+        android:fontFamily="serif-monospace"
+        android:text="Provider"
+        android:textSize="24sp"
+        app:cornerRadius="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnIntents"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.12"
+        android:elevation="-1dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/tattoo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

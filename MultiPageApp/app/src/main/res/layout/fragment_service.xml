@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageViewFon"
+        android:layout_width="match_parent"
+        android:layout_height="261dp"
+        app:srcCompat="@drawable/elka_fon" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="#BF9854"
+            android:fontFamily="serif-monospace"
+            android:textSize="16sp"
+            app:icon="@drawable/ic_play"
+            app:iconGravity="textEnd"
+            app:iconSize="32dp"
+            android:contentDescription="Play"/>
+
+        <Button
+            android:id="@+id/btnPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="#BF9854"
+            android:fontFamily="serif-monospace"
+            android:textSize="16sp"
+            app:icon="@drawable/ic_pause"
+            app:iconGravity="textEnd"
+            app:iconSize="32dp"
+            android:contentDescription="Pause"/>
+
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="#BF9854"
+            android:fontFamily="serif-monospace"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:icon="@drawable/ic_stop"
+            app:iconGravity="textEnd"
+            app:iconSize="32dp"
+            android:contentDescription="Stop"/>
+    </LinearLayout>
+
+
+</LinearLayout>

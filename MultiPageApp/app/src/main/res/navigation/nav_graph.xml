@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.multipageapp.ui.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_serviceFragment"
+            app:destination="@id/serviceFragment"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="true"
+            app:launchSingleTop="true"/>
+        <action
+            android:id="@+id/action_mainFragment_to_intentsFragment"
+            app:destination="@id/intentsFragment"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="true"
+            app:launchSingleTop="true"/>
+        <action
+            android:id="@+id/action_mainFragment_to_receiverFragment"
+            app:destination="@id/receiverFragment"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="true"
+            app:launchSingleTop="true"/>
+        <action
+            android:id="@+id/action_mainFragment_to_providerFragment"
+            app:destination="@id/providerFragment"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="true"
+            app:launchSingleTop="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/intentsFragment"
+        android:name="com.example.multipageapp.ui.IntentsFragment"
+        android:label="fragment_intents"
+        tools:layout="@layout/fragment_intents" >
+        <action
+            android:id="@+id/action_intentsFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="true"
+            app:launchSingleTop="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/providerFragment"
+        android:name="com.example.multipageapp.ui.ProviderFragment"
+        android:label="fragment_provider"
+        tools:layout="@layout/fragment_provider" >
+        <action
+            android:id="@+id/action_providerFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="true"
+            app:launchSingleTop="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/receiverFragment"
+        android:name="com.example.multipageapp.ui.ReceiverFragment"
+        android:label="fragment_receiver"
+        tools:layout="@layout/fragment_receiver" >
+        <action
+            android:id="@+id/action_receiverFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="true"
+            app:launchSingleTop="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/serviceFragment"
+        android:name="com.example.multipageapp.ui.ServiceFragment"
+        android:label="fragment_service"
+        tools:layout="@layout/fragment_service" >
+        <action
+            android:id="@+id/action_serviceFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="true"
+            app:launchSingleTop="true"/>
+    </fragment>
+</navigation>
